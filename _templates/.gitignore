@@ -1,0 +1,121 @@
+# ──────────────────────────────────────────
+# AWS & Credentials
+# ──────────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+credentials
+aws-exports.js
+.aws/
+
+# ──────────────────────────────────────────
+# Datasets (never commit raw data)
+# ──────────────────────────────────────────
+data/
+datasets/
+*.csv
+*.tsv
+*.json.gz
+*.parquet
+*.arrow
+*.feather
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.db
+*.sqlite
+
+# ──────────────────────────────────────────
+# Model Weights & Artifacts
+# ──────────────────────────────────────────
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.gguf
+*.safetensors
+*.pb
+*.tflite
+*.joblib
+*.model
+*.weights
+
+# ──────────────────────────────────────────
+# Jupyter Notebooks (outputs only)
+# ──────────────────────────────────────────
+# Uncommit this line if you want to track notebooks without outputs
+# .ipynb
+
+# Strip outputs before committing notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ──────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+*.pyc
+mlruns/
+.mlflow/
+
+# ──────────────────────────────────────────
+# AWS SageMaker
+# ──────────────────────────────────────────
+.sagemaker/
+sagemaker-*/
+
+# ──────────────────────────────────────────
+# AWS CDK / Terraform (if used for infra)
+# ──────────────────────────────────────────
+cdk.out/
+cdk.context.json
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+
+# ──────────────────────────────────────────
+# Node.js (for JS/TS based ML apps)
+# ──────────────────────────────────────────
+node_modules/
+npm-debug.log*
+dist/
+
+# ──────────────────────────────────────────
+# OS & Editor
+# ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ──────────────────────────────────────────
+# Logs & Temp Files
+# ──────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+outputs/
+results/
